@@ -83,10 +83,6 @@ Insert vlocity_cmt__Party__c:
 Insert vlocity_cmt__Premises__c:
   sf_object: vlocity_cmt__Premises__c
   table: vlocity_cmt__Premises__c
-  fields:
-  - vlocity_cmt__IsKeyAtPremises__c
-  - vlocity_cmt__IsOkToEnter__c
-  - vlocity_cmt__IsSupplyGuaranteed__c
 Insert RecordType:
   sf_object: RecordType
   table: RecordType
@@ -214,9 +210,6 @@ Insert Account:
 Insert vlocity_cmt__PaymentMethod__c:
   sf_object: vlocity_cmt__PaymentMethod__c
   table: vlocity_cmt__PaymentMethod__c
-  fields:
-  - vlocity_cmt__IsActive__c
-  - vlocity_cmt__IsPrimary__c
   lookups:
     vlocity_cmt__AccountId__c:
       table: Account

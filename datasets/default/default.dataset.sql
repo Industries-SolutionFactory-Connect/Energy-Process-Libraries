@@ -290,16 +290,11 @@ CREATE TABLE "vlocity_cmt__Party__c" (
 INSERT INTO "vlocity_cmt__Party__c" VALUES(1,'Sample Billing Account','False','0018F00000MVBRcQAP','Account','','');
 CREATE TABLE "vlocity_cmt__PaymentMethod__c" (
 	id INTEGER NOT NULL, 
-	"vlocity_cmt__IsActive__c" VARCHAR(255), 
-	"vlocity_cmt__IsPrimary__c" VARCHAR(255), 
 	"vlocity_cmt__AccountId__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
 CREATE TABLE "vlocity_cmt__Premises__c" (
 	id INTEGER NOT NULL, 
-	"vlocity_cmt__IsKeyAtPremises__c" VARCHAR(255), 
-	"vlocity_cmt__IsOkToEnter__c" VARCHAR(255), 
-	"vlocity_cmt__IsSupplyGuaranteed__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
 COMMIT;
