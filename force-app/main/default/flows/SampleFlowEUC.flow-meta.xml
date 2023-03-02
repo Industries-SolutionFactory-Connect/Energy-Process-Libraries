@@ -33,7 +33,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>scrHello</name>
-            <fieldText>&lt;p&gt;Hello There {!$User.Username}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Hello There {!$User.Username}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Company Name&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
