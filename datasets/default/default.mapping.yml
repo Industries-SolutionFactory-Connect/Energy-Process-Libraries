@@ -83,6 +83,14 @@ Insert vlocity_cmt__Party__c:
 Insert vlocity_cmt__Premises__c:
   sf_object: vlocity_cmt__Premises__c
   table: vlocity_cmt__Premises__c
+Insert RecordType:
+  sf_object: RecordType
+  table: RecordType
+  fields:
+  - Description
+  - DeveloperName
+  - Name
+  - SobjectType
 Insert Account:
   sf_object: Account
   table: Account
@@ -196,6 +204,9 @@ Insert Account:
       table: Account
       key_field: vlocity_cmt__RootAccountId__c
       after: Insert Account
+    RecordTypeId:
+      table: RecordType
+      key_field: RecordTypeId
 Insert vlocity_cmt__PaymentMethod__c:
   sf_object: vlocity_cmt__PaymentMethod__c
   table: vlocity_cmt__PaymentMethod__c
