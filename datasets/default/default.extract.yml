@@ -175,9 +175,3 @@ extract:
     - vlocity_cmt__RelationshipGroup__c
   vlocity_cmt__Premises__c:
     fields: []
-  RecordType:
-    fields:
-    - Description
-    - DeveloperName
-    - Name
-    - SobjectType
