@@ -85,20 +85,19 @@ CREATE TABLE "Account" (
 	"TickerSymbol" VARCHAR(255), 
 	"vlocity_cmt__UpsellOpportunity__c" VARCHAR(255), 
 	"Website" VARCHAR(255), 
-	"ParentId" VARCHAR(255), 
-	"RecordTypeId" VARCHAR(255), 
 	"vlocity_cmt__AutoPaymentMethodId__c" VARCHAR(255), 
+	"vlocity_cmt__PrimaryContactId__c" VARCHAR(255), 
+	"ParentId" VARCHAR(255), 
 	"vlocity_cmt__PartyId__c" VARCHAR(255), 
 	"vlocity_cmt__PersonContactId__c" VARCHAR(255), 
 	"vlocity_cmt__PremisesId__c" VARCHAR(255), 
-	"vlocity_cmt__PrimaryContactId__c" VARCHAR(255), 
 	"vlocity_cmt__RootAccountId__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "Account" VALUES(1,'','(212) 555-5555','','','Acme','','','(212) 555-5555','','','','Prospect','','100000000.0','','','','','','','','New York','USA','','','','','NY','10 Main Rd.','31349','','','','','','','','','','','','','','False','680','False','False','False','','False','Manufacturing','False','False','','False','','','','','','','New York','USA','','','','NY','10 Main Rd.','31349','','','','','','','','','','','','','','','','','','','','','','','');
-INSERT INTO "Account" VALUES(2,'Founded in March 1999, salesforce.com (http://www.salesforce.com) builds and delivers customer relationship management (CRM) applications as scalable online services. The salesforce.com product suite - Team Edition, Professional Edition, Enterprise Edition, Wireless Edition and Offline Edition - gives companies of all sizes a complete 360-degree view of the customer. The company''s award-winning CRM solutions provide integrated online sales force automation, customer service and support management, and marketing automation applications to help companies meet the complex challenges of global customer communication. Salesforce.com has received considerable recognition in the industry, including Editors'' Choice and two Five-Star ratings from PC Magazine, two Deploy Awards from InfoWorld, Red Herring 100, Upside Hot 100, Investor''s Choice Award from Enterprise Outlook, Editors'' Choice from TMCLabs, Top 10 CRM Implementation from Aberdeen Group, and InfoWorld''s 2001 CRM Technology of the Year. Founded in 1999, salesforce.com is headquartered in San Francisco, with offices in Europe and Asia.','(415) 901-7040','','','salesforce.com','','','(415) 901-7000','','','','Customer','','','','','','','','','','San Francisco','USA','','','','','CA','The Landmark @ One Market, Suite 300','94105','','','','','','','','','','','','','','False','','False','False','False','','False','Technology','False','False','','False','','','','','','','San Francisco','USA','','','','CA','The Landmark @ One Market, Suite 300','94105','','','','','','','','','','','','','','','http://www.salesforce.com','','','','','','','','');
-INSERT INTO "Account" VALUES(3,'GBM is the worldwide leader in technology news and information on the Web and the producer of the longest-running and farthest-reaching television shows about technology. GBM''s network of sites combines breakthrough interactive technology with engaging content and design and is consistently ranked as the Internet''s leading content network in terms of both audience size and revenue, serving millions of users each day. The company''s television programming is broadcast by the USA Network and the Sci-Fi Channel to more than 70 million households and is syndicated to broadcast television stations in the nation''s top 120 markets, including the top 10 markets.','','','','Global Media','','','(905) 555-1212','','','','Prospect','','','','','','','','','','Toronto','Canada','','','','','Ontario','150 Chestnut Street','L4B 1Y3','','','','','','','','','','','','','','False','14668','False','False','False','','False','Media','False','False','','False','','','','','','','Toronto','Canada','','','','Ontario','150 Chestnut Street','L4B 1Y3','','','','','','','','','','','','','','','','','','','','','','','');
-INSERT INTO "Account" VALUES(4,'','','','','Test Account','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','False','','False','False','False','','False','','False','False','','False','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','46','','1','','','','');
+INSERT INTO "Account" VALUES(1,'','(212) 555-5555','','','Acme','','','(212) 555-5555','','','','Prospect','','100000000.0','','','','','','','','New York','USA','','','','','NY','10 Main Rd.','31349','','','','','','','','','','','','','','False','680','False','False','False','','False','Manufacturing','False','False','','False','','','','','','','New York','USA','','','','NY','10 Main Rd.','31349','','','','','','','','','','','','','','','','','','','','','','');
+INSERT INTO "Account" VALUES(2,'Founded in March 1999, salesforce.com (http://www.salesforce.com) builds and delivers customer relationship management (CRM) applications as scalable online services. The salesforce.com product suite - Team Edition, Professional Edition, Enterprise Edition, Wireless Edition and Offline Edition - gives companies of all sizes a complete 360-degree view of the customer. The company''s award-winning CRM solutions provide integrated online sales force automation, customer service and support management, and marketing automation applications to help companies meet the complex challenges of global customer communication. Salesforce.com has received considerable recognition in the industry, including Editors'' Choice and two Five-Star ratings from PC Magazine, two Deploy Awards from InfoWorld, Red Herring 100, Upside Hot 100, Investor''s Choice Award from Enterprise Outlook, Editors'' Choice from TMCLabs, Top 10 CRM Implementation from Aberdeen Group, and InfoWorld''s 2001 CRM Technology of the Year. Founded in 1999, salesforce.com is headquartered in San Francisco, with offices in Europe and Asia.','(415) 901-7040','','','salesforce.com','','','(415) 901-7000','','','','Customer','','','','','','','','','','San Francisco','USA','','','','','CA','The Landmark @ One Market, Suite 300','94105','','','','','','','','','','','','','','False','','False','False','False','','False','Technology','False','False','','False','','','','','','','San Francisco','USA','','','','CA','The Landmark @ One Market, Suite 300','94105','','','','','','','','','','','','','','','http://www.salesforce.com','','','','','','','');
+INSERT INTO "Account" VALUES(3,'GBM is the worldwide leader in technology news and information on the Web and the producer of the longest-running and farthest-reaching television shows about technology. GBM''s network of sites combines breakthrough interactive technology with engaging content and design and is consistently ranked as the Internet''s leading content network in terms of both audience size and revenue, serving millions of users each day. The company''s television programming is broadcast by the USA Network and the Sci-Fi Channel to more than 70 million households and is syndicated to broadcast television stations in the nation''s top 120 markets, including the top 10 markets.','','','','Global Media','','','(905) 555-1212','','','','Prospect','','','','','','','','','','Toronto','Canada','','','','','Ontario','150 Chestnut Street','L4B 1Y3','','','','','','','','','','','','','','False','14668','False','False','False','','False','Media','False','False','','False','','','','','','','Toronto','Canada','','','','Ontario','150 Chestnut Street','L4B 1Y3','','','','','','','','','','','','','','','','','','','','','','');
+INSERT INTO "Account" VALUES(4,'','','','','Sample Account for Entitlements','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','False','','False','False','False','','False','','False','False','','False','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
 CREATE TABLE "Contact" (
 	id INTEGER NOT NULL, 
 	"AssistantName" VARCHAR(255), 
@@ -178,105 +177,20 @@ INSERT INTO "Contact" VALUES(4,'','','','','Marc R. Benioff is chairman and CEO 
 INSERT INTO "Contact" VALUES(5,'','','','','','False','info@salesforce.com','','','','Geoff','False','False','','','Minor','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','Toronto','Canada','','','','','L4B 1Y3','Ontario','150 Chestnut Street','(415) 555-1212','','President','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
 INSERT INTO "Contact" VALUES(6,'','','','','Carole White is looking at moving forward with our products and will act as the champion for us.','False','info@salesforce.com','','','','Carole','False','False','','','White','Employee Referral','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(415) 555-1212','','VP Sales','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
 INSERT INTO "Contact" VALUES(7,'','','','','','False','info@salesforce.com','','','(555) 555-1212','Jon','False','False','','','Amos','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(905) 555-1212','','Sales Manager','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
-CREATE TABLE "RecordType" (
-	id INTEGER NOT NULL, 
-	"Description" VARCHAR(255), 
-	"DeveloperName" VARCHAR(255), 
-	"Name" VARCHAR(255), 
-	"SobjectType" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "RecordType" VALUES(1,'PriceList record','PriceList','PriceList','vlocity_cmt__PriceList__c');
-INSERT INTO "RecordType" VALUES(2,'Discount record','Discount','Discount','vlocity_cmt__Promotion__c');
-INSERT INTO "RecordType" VALUES(3,'','Class','Class','Product2');
-INSERT INTO "RecordType" VALUES(4,'','ProductTemplate','Product Template','Product2');
-INSERT INTO "RecordType" VALUES(5,'','Product','Product','Product2');
-INSERT INTO "RecordType" VALUES(6,'','TermSpec','Term Spec','Product2');
-INSERT INTO "RecordType" VALUES(7,'Use master order for large multi-service point, multi-site or multi-subscriber orders when you need to break the large order into a collection of sub-orders.','MasterOrder','Master Order','Order');
-INSERT INTO "RecordType" VALUES(8,'','MobilePhoneOrder','MobilePhoneOrder','Order');
-INSERT INTO "RecordType" VALUES(9,'A group cart holds the configured offers designed to be applied to all of the members of the associated group.','GroupCart','Group Cart','Order');
-INSERT INTO "RecordType" VALUES(10,'Use Insertion Order to create the Media Plan, Placement and Deals in the respective Ad/Broadcast management systems.','InsertionOrder','Insertion Order','Order');
-INSERT INTO "RecordType" VALUES(11,'Use enterprise order for large multi-site or multi-subscriber orders when you want one single large order.','EnterpriseOrder','Enterprise Order','Order');
-INSERT INTO "RecordType" VALUES(12,'','Grouped','Grouped','vlocity_cmt__CalculationMatrix__c');
-INSERT INTO "RecordType" VALUES(13,'','SubPlan','Sub-plan','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(14,'','RowVersioned','Row-Versioned','vlocity_cmt__CalculationMatrix__c');
-INSERT INTO "RecordType" VALUES(15,'','QuestionTableSingleSelect','Question Table Single Select','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(16,'','PullEvent','Pull Event','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(17,'','SingleSelect','Single Select','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(18,'','PushEvent','Push Event','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(19,'','Number','Number','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(20,'','ManualTask','Manual Task','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(21,'','QuestionTableMultiSelect','Question Table Multi Select','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(22,'','Milestone','Milestone','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(23,'Promotion record','Promotion','Promotion','vlocity_cmt__Promotion__c');
-INSERT INTO "RecordType" VALUES(24,'Use enterprise quote for quoting large multi-site or multi-subscriber customers when you want one single large quote.','EnterpriseQuote','Enterprise Quote','Quote');
-INSERT INTO "RecordType" VALUES(25,'','WorkSet','Work Set','vlocity_cmt__Project__c');
-INSERT INTO "RecordType" VALUES(26,'','Module','Module','vlocity_cmt__Project__c');
-INSERT INTO "RecordType" VALUES(27,'','Grant','Grant','vlocity_cmt__PricingComponent__c');
-INSERT INTO "RecordType" VALUES(28,'','Alteration','Alteration','vlocity_cmt__PricingComponent__c');
-INSERT INTO "RecordType" VALUES(29,'','ChargeSpec','Charge Spec','vlocity_cmt__PricingComponent__c');
-INSERT INTO "RecordType" VALUES(30,'A working cart is a temporary cart used by CPQ processes to calculate validity and pricing for a subset of line items from a large order.','WorkingCart','Working Cart','Order');
-INSERT INTO "RecordType" VALUES(31,'Use a standard order for consumer and small to medium-sized business orders when the number of line items is not large (~200 or less).','StandardOrder','Standard Order','Order');
-INSERT INTO "RecordType" VALUES(32,'A sub-order is an order that is part of a large master order. Each sub-order is often targeted to a single service point, site or subscriber.','SubOrder','Sub Order','Order');
-INSERT INTO "RecordType" VALUES(33,'A sub-quote is a subset of a large master quote. Each sub-quote is often targeted to a single service point, site or subscriber.','SubQuote','Sub Quote','Quote');
-INSERT INTO "RecordType" VALUES(34,'Use the Media Plan Quote to create the Media Plan and AdPlacement details.','QuotedMediaPlan','Media Plan','Quote');
-INSERT INTO "RecordType" VALUES(35,'Use a standard quote for quoting small to medium-sized business customers when the number of sites or subscribers is relatively small.','StandardQuote','Standard Quote','Quote');
-INSERT INTO "RecordType" VALUES(36,'A group cart holds the configured offers designed to be applied to all of the members of the associated group.','GroupCart','Group Cart','Quote');
-INSERT INTO "RecordType" VALUES(37,'Use master quote for quoting large multi-service point, multi-site or multi-subscriber customers when you need to break the large quote into a collection of sub-quotes.','MasterQuote','Master Quote','Quote');
-INSERT INTO "RecordType" VALUES(38,'Billing complaint.','Billing','Billing','Case');
-INSERT INTO "RecordType" VALUES(39,'Mobile Phone Case','MobilePhoneCase','MobilePhoneCase','Case');
-INSERT INTO "RecordType" VALUES(40,'','Declarative','Declarative','vlocity_cmt__CalculationProcedure__c');
-INSERT INTO "RecordType" VALUES(41,'Mobile Phone Campaign','MobilePhoneCampaign','MobilePhoneCampaign','Campaign');
-INSERT INTO "RecordType" VALUES(42,'','Standard','Standard','vlocity_cmt__CalculationMatrix__c');
-INSERT INTO "RecordType" VALUES(43,'','ClassBased','Class Based','vlocity_cmt__CalculationProcedure__c');
-INSERT INTO "RecordType" VALUES(44,'Use the Agency Account to create an Entity which buys Ad-Deals on behalf of an Advertiser.','Agency','Agency','Account');
-INSERT INTO "RecordType" VALUES(45,'','FulfilmentRequest','Fulfilment Request','vlocity_cmt__FulfilmentRequest__c');
-INSERT INTO "RecordType" VALUES(46,'Use a billing account to add an alternate billing profile to a business account, consumer account or billing aggregator account.','Billing','Billing','Account');
-INSERT INTO "RecordType" VALUES(47,'','ServiceQualificationRequest','Service Qualification Request','vlocity_cmt__FulfilmentRequest__c');
-INSERT INTO "RecordType" VALUES(48,'Flatenned Product Hierarchy Items','ProductHierarchy','Product Hierarchy','vlocity_cmt__Datastore__c');
-INSERT INTO "RecordType" VALUES(49,'Use the Advertiser Account to create an Entity which buys Ad-Deals directly from Publisher.','Advertiser','Advertiser','Account');
-INSERT INTO "RecordType" VALUES(50,'Mobile Phone Event','MobilePhoneEvent','MobilePhoneEvent','Event');
-INSERT INTO "RecordType" VALUES(51,'CPQ API partition','CPQAPI','CPQAPI','vlocity_cmt__Datastore__c');
-INSERT INTO "RecordType" VALUES(52,'','Contract','Contract','Contract');
-INSERT INTO "RecordType" VALUES(53,'','Instruction','Instruction','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(54,'','ReadOnlyContract','Read Only','Contract');
-INSERT INTO "RecordType" VALUES(55,'There is something wrong with the service provided or a product associated with that service.','Service','Service','Case');
-INSERT INTO "RecordType" VALUES(56,'','MobilePhoneContact','MobilePhoneContact','Contact');
-INSERT INTO "RecordType" VALUES(57,'','AutoTask','Auto Task','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(58,'','MultiSelect','Multi Select','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(59,'','Callout','Callout','vlocity_cmt__OrchestrationItemDefinition__c');
-INSERT INTO "RecordType" VALUES(60,'','Date','Date','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(61,'Use the Media Campagin to create Media Campaign and associated Media Plans and Ad Placements.','MediaCampaign','Media Campaign','Opportunity');
-INSERT INTO "RecordType" VALUES(62,'','ObjectBased','Object Based','vlocity_cmt__VlocitySearchWidgetSetup__c');
-INSERT INTO "RecordType" VALUES(63,'','FreeText','Free Text','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(64,'Mobile Phone Opportunity','MobilePhoneOpportunity','MobilePhoneOpportunity','Opportunity');
-INSERT INTO "RecordType" VALUES(65,'Represents Ad Space specifications for Linear TV and Radio ads during scheduled programs.','ScheduledProgram','Scheduled Program','vlocity_cmt__AdSpaceSpecification__c');
-INSERT INTO "RecordType" VALUES(66,'','Exception','Exception','vlocity_cmt__OperatingHoursEntry__c');
-INSERT INTO "RecordType" VALUES(67,'Mobile Phone Task','MobilePhoneTask','MobilePhoneTask','Task');
-INSERT INTO "RecordType" VALUES(68,'','Checkbox','Checkbox','vlocity_cmt__AssessmentQuestion__c');
-INSERT INTO "RecordType" VALUES(69,'','Standard','Standard','vlocity_cmt__OperatingHoursEntry__c');
-INSERT INTO "RecordType" VALUES(70,'','ClassBased','Class Based','vlocity_cmt__VlocitySearchWidgetSetup__c');
-INSERT INTO "RecordType" VALUES(71,'The Ad Space record type is used to create a single Ad Space Specification record.','AdSpace','Ad Space','vlocity_cmt__AdSpaceSpecification__c');
-INSERT INTO "RecordType" VALUES(72,'','Object','Object','vlocity_cmt__ObjectClass__c');
-INSERT INTO "RecordType" VALUES(73,'The Ad Space Group record type is used to create the Ad Space Specification Group record.','AdSpaceGroup','Ad Space Group','vlocity_cmt__AdSpaceSpecification__c');
-INSERT INTO "RecordType" VALUES(74,'','ObjectType','Object Type','vlocity_cmt__ObjectClass__c');
-INSERT INTO "RecordType" VALUES(75,'A working cart is a temporary cart used by CPQ processes to calculate validity and pricing for a subset of line items from a large quote.','WorkingCart','Working Cart','Quote');
-INSERT INTO "RecordType" VALUES(76,'Use service accounts to add an additional service location to a business account, consumer account or service aggregator account.','Service','Service','Account');
-INSERT INTO "RecordType" VALUES(77,'','InventoryItem','Inventory Item','vlocity_cmt__InventoryItem__c');
-INSERT INTO "RecordType" VALUES(78,'Use a service aggregator account for large business customers to organize multiple sets of service locations in a service account hierarchy.','ServiceAggregator','Service Aggregator','Account');
-INSERT INTO "RecordType" VALUES(79,'','ServiceQualificationResult','Service Qualification Result','vlocity_cmt__InventoryItem__c');
-INSERT INTO "RecordType" VALUES(80,'','MobilePhoneAccount','MobilePhoneAccount','Account');
-INSERT INTO "RecordType" VALUES(81,'','NoRetryPolicy','No Retry Policy','vlocity_cmt__IntegrationRetryPolicy__c');
-INSERT INTO "RecordType" VALUES(82,'Use other accounts for organizations that are not a customer.','Other','Other','Account');
-INSERT INTO "RecordType" VALUES(83,'','StaggeredRetryPolicy','Staggered Retry Policy','vlocity_cmt__IntegrationRetryPolicy__c');
-INSERT INTO "RecordType" VALUES(84,'Use business accounts for customers that are businesses, organizations or other public or private agencies.','Business','Business','Account');
-INSERT INTO "RecordType" VALUES(85,'','MonotonousForeverRetryPolicy','Monotonous Forever Retry Policy','vlocity_cmt__IntegrationRetryPolicy__c');
-INSERT INTO "RecordType" VALUES(86,'Use consumer accounts for customers who are individual consumers, families or small office/home offices.','Consumer','Consumer','Account');
-INSERT INTO "RecordType" VALUES(87,'','MonotonousRetryPolicy','Monotonous Retry Policy','vlocity_cmt__IntegrationRetryPolicy__c');
-INSERT INTO "RecordType" VALUES(88,'Use a billing aggregator account for large business customers to organize multiple sets of billing accounts in a billing account hierarchy.','BillingAggregator','Billing Aggregator','Account');
-INSERT INTO "RecordType" VALUES(89,'','Group','Group','vlocity_cmt__Household__c');
-INSERT INTO "RecordType" VALUES(90,'Use the Brand Account to create an Entity which the Advertiser uses to identify themself in the market.','Brand','Brand','Account');
-INSERT INTO "RecordType" VALUES(91,'','Household','Household','vlocity_cmt__Household__c');
+INSERT INTO "Contact" VALUES(8,'','','','','Marc R. Benioff is chairman and CEO of salesforce.com. He founded the company in March 1999 with the idea to create an information utility that would make traditional enterprise software technology and business models obsolete. A veteran of 25 years in the software industry, he is now regarded as a pioneer of "The End Of Software," demonstrating how on-demand applications can replace traditional software to deliver immediate benefit at reduced risk. In May 2003, Benioff was appointed by President George W. Bush as co-chair of the President''s Information Technology Advisory Committee (PITAC), a bi-partisan organization of business leaders and academics charged to advise The President on how to maintain the United States'' preeminent position in information technology.','False','info@salesforce.com','','','(415) 901-7040','Marc','False','False','','','Benioff','','San Francisco','USA','','','','94105','CA','The Landmark @ One Market, Suite 300','','San Francisco','USA','','','','','94105','CA','The Landmark @ One Market, Suite 300','(415) 901-7000','Mr.','Executive Officer','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(9,'','','','','','False','info@salesforce.com','','','','Geoff','False','False','','','Minor','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','Toronto','Canada','','','','','L4B 1Y3','Ontario','150 Chestnut Street','(415) 555-1212','','President','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(10,'','','','','Carole White is looking at moving forward with our products and will act as the champion for us.','False','info@salesforce.com','','','','Carole','False','False','','','White','Employee Referral','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(415) 555-1212','','VP Sales','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(11,'','','','','','False','info@salesforce.com','','','(555) 555-1212','Jon','False','False','','','Amos','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(905) 555-1212','','Sales Manager','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(12,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Edward','False','False','','','Stamos','','New York City','USA','','','','31349','NY','10 Main Rd.','','New York City','USA','','','','','31349','NY','10 Main Rd.','(212) 555-5555','','President and CEO','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(13,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Howard','False','False','','','Jones','','New York','USA','','','','31349','NY','10 Main Rd.','','','','','','','','','','','(212) 555-5555','','Buyer','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(14,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Leanne','False','False','','','Tomlin','','New York','USA','','','','31349','NY','10 Main Rd.','','','','','','','','','','','(212) 555-5555','','VP Customer Support','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(15,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Edward','False','False','','','Stamos','','New York City','USA','','','','31349','NY','10 Main Rd.','','New York City','USA','','','','','31349','NY','10 Main Rd.','(212) 555-5555','','President and CEO','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(16,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Howard','False','False','','','Jones','','New York','USA','','','','31349','NY','10 Main Rd.','','','','','','','','','','','(212) 555-5555','','Buyer','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(17,'','','','','','False','info@salesforce.com','','','(212) 555-5555','Leanne','False','False','','','Tomlin','','New York','USA','','','','31349','NY','10 Main Rd.','','','','','','','','','','','(212) 555-5555','','VP Customer Support','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(18,'','','','','Marc R. Benioff is chairman and CEO of salesforce.com. He founded the company in March 1999 with the idea to create an information utility that would make traditional enterprise software technology and business models obsolete. A veteran of 25 years in the software industry, he is now regarded as a pioneer of "The End Of Software," demonstrating how on-demand applications can replace traditional software to deliver immediate benefit at reduced risk. In May 2003, Benioff was appointed by President George W. Bush as co-chair of the President''s Information Technology Advisory Committee (PITAC), a bi-partisan organization of business leaders and academics charged to advise The President on how to maintain the United States'' preeminent position in information technology.','False','info@salesforce.com','','','(415) 901-7040','Marc','False','False','','','Benioff','','San Francisco','USA','','','','94105','CA','The Landmark @ One Market, Suite 300','','San Francisco','USA','','','','','94105','CA','The Landmark @ One Market, Suite 300','(415) 901-7000','Mr.','Executive Officer','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(19,'','','','','','False','info@salesforce.com','','','','Geoff','False','False','','','Minor','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','Toronto','Canada','','','','','L4B 1Y3','Ontario','150 Chestnut Street','(415) 555-1212','','President','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(20,'','','','','Carole White is looking at moving forward with our products and will act as the champion for us.','False','info@salesforce.com','','','','Carole','False','False','','','White','Employee Referral','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(415) 555-1212','','VP Sales','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
+INSERT INTO "Contact" VALUES(21,'','','','','','False','info@salesforce.com','','','(555) 555-1212','Jon','False','False','','','Amos','','Toronto','Canada','','','','L4B 1Y3','Ontario','150 Chestnut Street','','','','','','','','','','','(905) 555-1212','','Sales Manager','','False','','','','','','False','','False','False','False','False','','','','','','','','','','','','','','','','','');
 CREATE TABLE "vlocity_cmt__Party__c" (
 	id INTEGER NOT NULL, 
 	"Name" VARCHAR(255), 
@@ -287,7 +201,28 @@ CREATE TABLE "vlocity_cmt__Party__c" (
 	"vlocity_cmt__RelationshipGroup__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "vlocity_cmt__Party__c" VALUES(1,'Test Account','False','001DH00000rUosQYAS','Account','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(1,'Marc Benioff','False','0038D00000GN9v1QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(2,'Geoff Minor','False','0038D00000GN9v2QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(3,'Carole White','False','0038D00000GN9v3QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(4,'Jon Amos','False','0038D00000GN9v4QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(5,'Edward Stamos','False','0038D00000GN9v5QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(6,'Howard Jones','False','0038D00000GN9v6QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(7,'Leanne Tomlin','False','0038D00000GN9v7QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(8,'Edward Stamos','False','0038D00000GN9v8QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(9,'Howard Jones','False','0038D00000GN9v9QAD','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(10,'Leanne Tomlin','False','0038D00000GN9vAQAT','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(11,'Marc Benioff','False','0038D00000GN9vBQAT','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(12,'Geoff Minor','False','0038D00000GN9vCQAT','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(13,'Carole White','False','0038D00000GN9vDQAT','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(14,'Jon Amos','False','0038D00000GN9vEQAT','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(15,'Edward Stamos','False','0038N00000CWEPdQAP','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(16,'Howard Jones','False','0038N00000CWEk8QAH','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(17,'Leanne Tomlin','False','0038N00000CWEk9QAH','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(18,'Marc Benioff','False','0038N00000CWEkAQAX','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(19,'Geoff Minor','False','0038N00000CWEkBQAX','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(20,'Carole White','False','0038N00000CWEkCQAX','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(21,'Jon Amos','False','0038N00000CWEkDQAX','Contact','','');
+INSERT INTO "vlocity_cmt__Party__c" VALUES(22,'Test Account','False','001DH00000rUosQYAS','Account','','');
 CREATE TABLE "vlocity_cmt__PaymentMethod__c" (
 	id INTEGER NOT NULL, 
 	"vlocity_cmt__AccountId__c" VARCHAR(255), 
