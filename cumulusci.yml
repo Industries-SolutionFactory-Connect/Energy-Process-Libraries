@@ -1,28 +1,58 @@
-minimum_cumulusci_version: '3.68.0.dev2'
+minimum_cumulusci_version: '3.71.0'
 project:
-    name: Energy-Process-Libraries
+    name: tmforum-automation
     package:
-        name: Energy-Process-Libraries
+        name: tmforum-automation
         api_version: '55.0'
     git:
         default_branch: 'main'
-        prefix_feature: 'feature/'
-        prefix_beta: 'beta/'
-        prefix_release: 'release/'
+        repo_url: https://github.com/Industries-SolutionFactory-Connect/Energy-Process-Libraries
     source_format: sfdx
 
-tasks:
-    robot:
-        options:
-            suites: robot/Energy-Process-Libraries/tests
-            options:
-                outputdir: robot/Energy-Process-Libraries/results
+tasks:  
 
-    robot_testdoc:
-        options:
-            path: robot/Energy-Process-Libraries/tests
-            output: robot/Energy-Process-Libraries/doc/Energy-Process-Libraries_tests.html
+  deploy_SFS_Mobile_Screen_Flow:
+    class_path: cumulusci.tasks.vlocity.vlocity.VlocityDeployTask
+    options:
+       path: force-app/main/default/flows      
+    ui_options:
+      name: Deploy Mobile Screen Flow
 
-    run_tests:
-        options:
-            required_org_code_coverage_percent: 75
+  deploy_Sample_Config_Data:
+    class_path: cumulusci.tasks.vlocity.vlocity.VlocityDeployTask
+    options:
+                    mapping: datasets/default/default.mapping.yml
+                    sql_path: datasets/default/default.dataset.sql
+     ui_options:
+      name: Deploy Sample Configuration Data                 
+
+  
+flows:
+  deploy_SFS_SCW_Components:
+    description: Flow and Sample Data Deploy
+    steps:
+      1:
+        task: deploy_SFS_Mobile_Screen_Flow
+        ui_options:
+          name: Deploy Mobile Screen Flow       
+      2:  
+        task: deploy_Sample_Config_Data        
+        ui_options:
+          name: Deploy Sample Configuration Data                   
+        
+
+plans:
+  install:
+    slug: install
+    tier: primary
+    title: Deploy Short Cycle Work Artefacts
+    checks:
+      - when: "'vlocity_cmt' not in tasks.get_installed_packages()"
+        action: error
+        message: "You need vlocity_cmt package to use this feature. Contact your Administrator."
+      - when: "'FieldServiceStandardPsl' not in tasks.get_assigned_permission_sets()"
+        action: error
+        message: "You need Field Service PSL to use this feature. Contact your Administrator."    
+    steps:
+      1:
+        flow: deploy_SFS_SCW_Components
