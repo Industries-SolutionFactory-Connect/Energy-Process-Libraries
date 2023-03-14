@@ -12,20 +12,11 @@ project:
 tasks:  
 
   deploy_SFS_Mobile_Screen_Flow:
-    class_path: cumulusci.tasks.vlocity.vlocity.VlocityDeployTask
+    class_path: cumulusci.tasks.salesforce.Deploy
     options:
        path: force-app/main/default/flows      
     ui_options:
       name: Deploy Mobile Screen Flow
-
-  deploy_Sample_Config_Data:
-    class_path: cumulusci.tasks.vlocity.vlocity.VlocityDeployTask
-    options:
-                    mapping: datasets/default/default.mapping.yml
-                    sql_path: datasets/default/default.dataset.sql
-     ui_options:
-      name: Deploy Sample Configuration Data                 
-
   
 flows:
   deploy_SFS_SCW_Components:
@@ -36,10 +27,13 @@ flows:
         ui_options:
           name: Deploy Mobile Screen Flow       
       2:  
-        task: deploy_Sample_Config_Data        
+        task: load_dataset
+        options:
+          mapping: datasets/default/default.mapping.yml
+          sql_path: datasets/default/default.dataset.sql
         ui_options:
-          name: Deploy Sample Configuration Data                   
-        
+          name: Deploy Sample Configuration Data                                    
+  
 
 plans:
   install:
@@ -50,7 +44,7 @@ plans:
       - when: "'vlocity_cmt' not in tasks.get_installed_packages()"
         action: error
         message: "You need vlocity_cmt package to use this feature. Contact your Administrator."
-      - when: "'FieldServiceStandardPsl' not in tasks.get_assigned_permission_sets()"
+      - when: "'FSL_Admin_Permissions' not in tasks.get_assigned_permission_sets()"
         action: error
         message: "You need Field Service PSL to use this feature. Contact your Administrator."    
     steps:
